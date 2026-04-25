@@ -71,7 +71,7 @@ A responsive age calculator that converts a user's date of birth into **years, m
 
 ## 📫 Connect With Me
 
-- GitHub: [Your GitHub]
+- GitHub: [https://github.com/shadymo2291]
 - Frontend Mentor: [https://www.frontendmentor.io/profile/shadymo2291]
 - LinkedIn: [https://www.linkedin.com/in/shady-mohamed-a222a53a4/]
 - Upwork: [https://www.upwork.com/freelancers/~01d544da35261cf01c]
