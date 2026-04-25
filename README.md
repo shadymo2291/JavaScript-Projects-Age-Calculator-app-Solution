@@ -39,9 +39,8 @@ A responsive age calculator that converts a user's date of birth into **years, m
 - Separating UI logic from business logic  
 - Improving UX with subtle animations  
 
-👉 [View Project Repository](#)
-
----
+👉 [View Project Repository](https://github.com/shadymo2291/JavaScript-Projects-Age-Calculator-app-Solution)
+- try the app :
 
 ## 🛠️ Tech Stack
 
