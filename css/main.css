@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #854dff;
+    --invalid-color: #ff5757;
+    --main-section-color: #ffffff;
+    --color: #f0f0f0;
+    --background-color: #dbdbdb;
+    --second-color: #716f6f;
+    --black-color: #000000;
+    --inputs-font-size: 45px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--main-section-color);
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px 15px 100px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--background-color);
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    max-width: 80px;
+}
+
+
+
+form > div label {
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--second-color);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+form > div label.invalid {
+    color: var(--invalid-color);
+}
+
+form > div input {
+    display: inline-block;
+    padding: 8px 8px 6px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 800;
+    border: 1px solid var(--background-color);
+    caret-color: var(--main-color);
+    letter-spacing: 1.4px;
+    cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+form > div input.invalid {
+    border-color: var(--invalid-color);
+    color: var(--invalid-color);
+}
+
+form > div input::placeholder {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+form > div input:focus {
+    /* outline: 1px solid var(--main-color); */
+    outline: none;
+    border: 1px solid var(--main-color);
+}
+
+form > div span {
+    font-size: 4px;
+    color: var(--invalid-color);
+    /* display: none; */
+}
+
+form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    padding: 10px;
+    border: none;
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--black-color);
+}
+
+form button img {
+    display: inline-block;
+    width: 18px;
+}
+
+.result {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.result .target {
+    display: inline-block;
+    color: var(--main-color);
+    width: 60px;
+    text-align: center;
+}
+
+.result div {
+    line-height: 45px;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        width: 400px;
+    }
+    form {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    form > div {
+        max-width: 90px;
+    }
+
+    form > div span {
+        font-size: 8px;
+    }
+
+    form button {
+        right: 0;
+        transform: translateX(0);
+    }
+
+    .result {
+        font-size: 50px;
+    }
+
+    .result div {
+        line-height: 55px;
+    }
+}
+
+/* Validation Styling */
+
+div label.invalid {
+    color: var(--invalid-color);
+}
